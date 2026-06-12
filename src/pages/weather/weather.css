@@ -1,0 +1,38 @@
+@import '../../assets/css/site.css';
+
+.weather-card {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 20px;
+    align-items: center;
+    padding-left: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.temp {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    padding-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.veckodag {
+    font-size: 25px;
+    color: var(--yellow-color);
+}
+
+.datum {
+    font-size: 15px;
+}
+
+.maxsize {
+    font-size: 20px;
+    color: red;
+}
+
+.minsize {
+    font-size: 20px;
+    color: rgb(43, 105, 222);
+}
+

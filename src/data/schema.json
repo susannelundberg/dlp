@@ -1,0 +1,57 @@
+[
+  {
+    "dag": "Söndag 14 juli",
+    "händelser": [
+      { "tid": "08.25", "beskrivning": "Flyg avgår" },
+      { "tid": "13.00", "beskrivning": "Ankomst Disneyland & incheckning" },
+      { "tid": "13.30", "beskrivning": "Val d'Europe: lunch & shopping" },
+      { "tid": "18.00", "beskrivning": "Middag på Cape Cod" }
+    ]
+  },
+  {
+    "dag": "Måndag 15 juli",
+    "händelser": [
+      { "tid": "07.00", "beskrivning": "God morgon! Frukost på rummet." },
+      { "tid": "07.45", "beskrivning": "Promenad till parken." },
+      { "tid": "08.30", "beskrivning": "Disneyland öppnar! Main street, Draken, Slottet, Tekopparna, Casey JR, Small world, Autopia." },
+      { "tid": "11.30", "beskrivning": "Lunch, sovstund, poolhäng." },
+      { "tid": "15.00", "beskrivning": "Tillbaka till parken! Phanton Manor, Thunder Mountain, snacks på Coco's, träffa Långben, hänga på lekplats." },
+      { "tid": "18.00", "beskrivning": "Middag på Cowboy Cookout." }
+    ]
+  },
+  {
+    "dag": "Tisdag 16 juli",
+    "händelser": [
+      { "tid": "07.00", "beskrivning": "God morgon! Frukost på rummet." },
+      { "tid": "07.45", "beskrivning": "Promenad till parken." },
+      { "tid": "08.30", "beskrivning": "Adventure World öppnar! World of Frozen, ev. träffa Elsa & Anna, Rapunzel spin, Rapunzel-show 11.30." },
+      { "tid": "11.30", "beskrivning": "Lunch, sovstund, poolhäng." },
+      { "tid": "15.00", "beskrivning": "Tillbaka till parken! Mimmi-show 16.20, Tower of Terror, Webslinger, Avengers." },
+      { "tid": "18.00", "beskrivning": "Middag på Stark Factory." }
+    ]
+  },
+  {
+    "dag": "Onsdag 17 juli",
+    "händelser": [
+      { "tid": "07.00", "beskrivning": "God morgon! Frukost på rummet." },
+      { "tid": "07.45", "beskrivning": "Promenad till parken." },
+      { "tid": "08.30", "beskrivning": "Adventure World öppnar! Ratatoullie, Pixar-området, Cars, Pixar-show 11.15." },
+      { "tid": "11.30", "beskrivning": "Lunch, sovstund, poolhäng." },
+      { "tid": "15.00", "beskrivning": "Tillbaka till Disneyland Park! Space Mountain, Star Tours, Buzz Lightyear, snack på Café de la Brousse, Adventure Island." },
+      { "tid": "18.00", "beskrivning": "Middag på Colonal Haiti’s Outpost." }
+    ]
+  },
+  {
+    "dag": "Torsdag 18 juli",
+    "händelser": [
+      { "tid": "07.00", "beskrivning": "God morgon! Frukost på Disney." },
+      { "tid": "08.00", "beskrivning": "Checka ut och lämna väskorna." },
+      { "tid": "09.00", "beskrivning": "Promenad till parkerna." },
+      { "tid": "12.00", "beskrivning": "Lunch i parken." },
+      { "tid": "15.30", "beskrivning": "Hämta väskorna på tågstationen." },
+      { "tid": "16.30", "beskrivning": "Tåg till flygplatsen." },
+      { "tid": "20.10", "beskrivning": "Flyg avgår." },
+      { "tid": "22.05", "beskrivning": "Flyg anländer i Köpenhamn." }
+    ]
+  }
+]

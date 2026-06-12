@@ -1,0 +1,34 @@
+@import '../../assets/css/site.css';
+
+.info-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.info {
+    flex: 1;
+}
+
+h2 {
+    color: var(--secondary-color);
+    padding-bottom: 20px;
+}
+
+.content {
+    width: 750px;
+    border: solid 1px var(--primary-border-color);
+    padding: 0.8rem;
+    border-radius: 1rem;
+}
+
+.punkt {
+    padding-bottom: 10px;
+}
+
+.punkt .material-symbols-outlined {
+    color: gold;
+    font-size: 30px;
+    vertical-align: middle;
+}

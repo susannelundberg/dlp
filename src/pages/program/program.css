@@ -1,0 +1,54 @@
+@import '../../assets/css/site.css';
+
+.schema-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.schema {
+    flex: 1;
+}
+
+.box {
+    flex: 1;
+}
+
+[id^="toggle-text"] {
+    display: none;
+}
+
+.content {
+    display: none;
+    margin-top: 1rem;
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+[id^="toggle-text"]:checked + label + .content {
+    display: block;
+}
+
+label {
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.happening {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.time {
+    font-weight: bold;
+    color: var(--yellow-color);
+}
+
+.time h.beskrivning {
+    font-size: smaller;
+}

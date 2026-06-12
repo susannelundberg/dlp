@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import './navbar.css';
+
+:root {
+    --primary-color: #fff5f1;
+    --secondary-color: #fe68a6;
+    --text-color: #060606;
+    --primary-border-color: #1786eb;
+    --button-hover-background: #800080;
+    --blue-color: #1786eb;
+    --green-color: #13c29c;
+    --yellow-color: #f6b824;
+    --max-width: 992px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Fraunces', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+main {
+    padding-top: 50px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 25px;
+    color: var(--blue-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}

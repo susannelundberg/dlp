@@ -1,0 +1,27 @@
+@import '../../assets/css/site.css';
+
+.maps{
+    display: flex;
+    align-items: flex-start;
+    padding-left: 4rem;
+    gap: 1rem;
+}
+
+.park-image {
+    width: 75%;
+    height: 75%;
+    border: solid 2px var(--primary-border-color);
+    border-radius: 2rem;
+}
+
+.adventure-image {
+    width: 75%;
+    height: 75%;
+    border: solid 2px var(--primary-border-color);
+    border-radius: 2rem;
+}
+
+label {
+    cursor: pointer;
+    font-size: 1rem;
+}

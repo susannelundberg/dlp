@@ -1,0 +1,91 @@
+header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: var(--primary--color);
+    opacity: 0.7;
+    border-bottom: solid 2px var(--primary-boarder-color);
+    padding: 0.8rem 0;
+    z-index: 1;
+}
+
+nav {
+    padding: 0 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.8rem;
+    list-style: none;
+}
+
+nav ul li.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+nav ul li.logo img {
+    width: 6rem;
+    height: 3rem;
+    aspect-ratio: 2/1;
+    /* border-radius: 100%; */
+}
+
+nav ul li.toggle {
+    display: block;
+    order: 1;
+}
+
+nav ul li.menu-item {
+    width: 100%;
+    text-align: center;
+    order: 2;
+    display: none;
+}
+
+/* Visa dropdown-meny */
+nav ul:has(li .menu-btn:checked) .menu-item {
+    display: block;
+}
+
+/* Skapa hamburgermenyn */
+nav ul li .menu-btn {
+    display: none;
+}
+
+nav ul li .menu-icon {
+    padding: 1.75rem 1.25rem;
+    cursor: pointer;
+}
+
+nav ul li .menu-icon .nav-icon {
+    background-color: var(--secondary-color);
+    display: block;
+    height: 2px;
+    width: 1.75rem;
+    position: relative;
+    transition: background-color 0.2s ease-out;
+}
+
+nav ul li .menu-icon .nav-icon:before,
+nav ul li .menu-icon .nav-icon:after {
+    content: '';
+    background-color: var(--secondary-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: block;
+    transition: all 0.2s ease-out;
+}
+
+nav ul li .menu-icon .nav-icon:before {
+    top: -5px;
+}
+
+nav ul li .menu-icon .nav-icon:after {
+    top: 5px;
+}
