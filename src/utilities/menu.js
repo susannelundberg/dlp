@@ -4,7 +4,7 @@ export const navbar = /*HTML*/ `
             <ul>
                 <li class="logo">
                     <a href="./index.html">
-                        <img src="/src/assets/images/mimmimusse.png" alt="logotype">
+                        <img src="/assets/images/mimmimusse.png" alt="logotype">
                         <span>DLP</span>
                     </a>
                 </li>
