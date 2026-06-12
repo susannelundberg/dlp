@@ -5,6 +5,7 @@
     gap: 20px;
     align-items: flex-start;
     padding-left: 2rem;
+    padding-bottom: 2rem;
 }
 
 .info {
@@ -31,4 +32,25 @@ h2 {
     color: gold;
     font-size: 30px;
     vertical-align: middle;
+}
+
+.npb-bilder {
+    display: flex;
+    align-items: justify;
+    padding-left: 2rem;
+    gap: 1rem;
+}
+
+.hotel-image {
+    width: 30%;
+    height: 30%;
+    border: solid 2px var(--primary-border-color);
+    border-radius: 2rem;
+}
+
+.pool-image {
+    width: 30%;
+    height: 30%;
+    border: solid 2px var(--primary-border-color);
+    border-radius: 2rem;
 }
