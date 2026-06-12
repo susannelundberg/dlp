@@ -3,7 +3,7 @@ export const navbar = /*HTML*/ `
          <nav>
             <ul>
                 <li class="logo">
-                    <a href="./index.html">
+                    <a href="/index.html">
                         <img src="/assets/images/mimmimusse.png" alt="logotype">
                         <span>DLP</span>
                     </a>
