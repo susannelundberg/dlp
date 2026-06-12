@@ -2,9 +2,11 @@
   {
     "dag": "Söndag 14 juli",
     "händelser": [
-      { "tid": "08.25", "beskrivning": "Flyg avgår" },
+      { "tid": "08.25", "beskrivning": "Flyg avgår från CPH" },
+      { "tid": "10.25", "beskrivning": "Flyg landar på CDG" },
+      { "tid": "12.23", "beskrivning": "Tåg avgår (10 minuters resa)" },
       { "tid": "13.00", "beskrivning": "Ankomst Disneyland & incheckning" },
-      { "tid": "13.30", "beskrivning": "Val d'Europe: lunch & shopping" },
+      { "tid": "13.30", "beskrivning": "Val d'Europe: lunch på Chikin Bang & shopping" },
       { "tid": "18.00", "beskrivning": "Middag på Cape Cod" }
     ]
   },

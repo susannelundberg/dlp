@@ -2,15 +2,12 @@
     {
         "rubrik" : "Shower",
         "innehåll" : [
-            {"namn" : "Mimmie och vänner", "tider" : "16.20, 17.20"},
-            {"namn" : "Pixar", "tider" : "15.40, 16.50"},
-            {"namn" : "Musse och magikern", "tider" : "17.25, 18.30"},
+            {"namn" : "Minnie's Dream Factory", "tider" : "16.20, 17.20"},
+            {"namn" : "TOGETHER: a Pixar Musical Adventure", "tider" : "15.40, 16.50"},
             {"namn" : "Rapunzel", "tider" : "09.40, 10.35, 11.30"},
-            {"namn" : "Mimmie's marschorkester", "tider" : "16.15, 17.20, 18.20"},
-            {"namn" : "Festiligheter i Arendal", "tider" : "15.20"}
+            {"namn" : "Disney Marching band", "tider" : "16.15, 17.20, 18.20"},
+            {"namn" : "A Celebration in Arendelle", "tider" : "15.20"}
             
         ]
     }
 ]
-
-
