@@ -52,3 +52,12 @@ label {
 .time h.beskrivning {
     font-size: smaller;
 }
+
+/* Inställningar för mobila enheter */
+
+@media (max-width: 767px) {
+    .schema-container {
+        flex-direction: column;
+        padding-left: 1rem;
+    }
+}

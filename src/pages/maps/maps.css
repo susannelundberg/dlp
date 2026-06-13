@@ -3,6 +3,7 @@
 .maps{
     display: flex;
     align-items: flex-start;
+    justify-content: center;
     padding-left: 4rem;
     gap: 1rem;
 }
@@ -10,18 +11,32 @@
 .park-image {
     width: 75%;
     height: 75%;
-    border: solid 2px var(--primary-border-color);
     border-radius: 2rem;
 }
 
 .adventure-image {
     width: 75%;
     height: 75%;
-    border: solid 2px var(--primary-border-color);
     border-radius: 2rem;
 }
 
 label {
     cursor: pointer;
     font-size: 1rem;
+}
+
+/* Inställningar för mobila enheter */
+
+@media (max-width: 767px) {
+    .maps {
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: center;
+    }
+
+    .park-image,
+    .adventure-image {
+        width: 100%;
+        height: auto;
+    }
 }

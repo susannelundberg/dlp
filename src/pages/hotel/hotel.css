@@ -19,7 +19,6 @@ h2 {
 
 .content {
     width: 750px;
-    border: solid 1px var(--primary-border-color);
     padding: 0.8rem;
     border-radius: 1rem;
 }
@@ -44,13 +43,39 @@ h2 {
 .hotel-image {
     width: 30%;
     height: 30%;
-    border: solid 2px var(--primary-border-color);
+    border: solid 2px var(--secondary-color);
     border-radius: 2rem;
 }
 
 .pool-image {
     width: 30%;
     height: 30%;
-    border: solid 2px var(--primary-border-color);
+    border: solid 2px var(--secondary-color);
     border-radius: 2rem;
+}
+
+/* Inställningar för mobil enhet */
+
+@media (max-width: 767px) {
+    .info-container {
+        flex-direction: column;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .content {
+        width: 100%;
+    }
+
+    .npb-bilder {
+        flex-direction: column;
+        padding-left: 1rem;
+        align-items: center;
+    }
+
+    .hotel-image,
+    .pool-image {
+        width: 100%;
+        height: auto;
+    }
 }
