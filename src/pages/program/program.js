@@ -1,21 +1,17 @@
 import { navbar } from "../../utilities/menu.js";
+import DataClient from "../../utilities/data-client.js";
 
-const initApp = () => {
-  document.querySelector('header').insertAdjacentHTML('afterbegin', navbar);
-};
+const scheduleClient = new DataClient('schema');
 
-initApp();
+const renderSchedule = async () => {
+    const dagar = await scheduleClient.listAll();
+    const container = document.querySelector('.schema-container');
 
-fetch('../../data/schema.json')
-    .then(res => res.json())
-    .then(dagar => {
-        const container = document.querySelector('.schema-container');
+    dagar.forEach((dag, index) => {
+        const id = `toggle-text${index +1}`;
 
-        dagar.forEach((dag, index) => {
-            const id = `toggle-text${index +1}`;
-
-            const html = `
-            <section class="schema">
+        const html = `
+        <section class="schema">
             <h2>${dag.dag}</h2>
             <input type="checkbox" id="${id}">
             <label for="${id}">Visa mer</label>
@@ -32,4 +28,11 @@ fetch('../../data/schema.json')
             
             container.insertAdjacentHTML('beforeend', html);
         });
-    });
+};
+
+const initApp = () => {
+  document.querySelector('header').insertAdjacentHTML('afterbegin', navbar);
+  renderSchedule();
+};
+
+initApp();
