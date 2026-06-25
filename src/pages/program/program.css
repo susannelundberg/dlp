@@ -28,6 +28,11 @@ h2 {
     color: var(--secondary-color);
 }
 
+.h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
 [id^="toggle-text"]:checked + label + .content {
     display: block;
 }
@@ -51,6 +56,11 @@ label {
 
 .time h.beskrivning {
     font-size: smaller;
+}
+
+.schema-form,
+.dag-form {
+    margin-bottom: 1rem;
 }
 
 /* Inställningar för mobila enheter */

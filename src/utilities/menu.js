@@ -18,10 +18,10 @@ export const navbar = /*HTML*/ `
                 <li class="menu-item"><a href="/index.html">Start</a></li>
                 <li class="menu-item"><a href="/pages/program/program.html">Program</a></li>
                 <li class="menu-item"><a href="/pages/information/information.html">Information</a></li>
-                <li class="menu-item"><a href="/pages/weather/weather.html">Väder</a></li>
-                <li class="menu-item"><a href="/pages/maps/maps.html">Parkerna</a></li>
-                <li class="menu-item"><a href="/pages/hotel/hotel.html">Hotellet</a></li>
-                <li class="menu-item"><a href="/pages/my-page/my-page.html">Min sida</a></li>
+                <li class="menu-item"><a href="/pages/weather/weather.html">Weather</a></li>
+                <li class="menu-item"><a href="/pages/maps/maps.html">The parks</a></li>
+                <li class="menu-item"><a href="/pages/hotel/hotel.html">Hotel</a></li>
+                <li class="menu-item"><a href="/pages/my-page/my-page.html">My page</a></li>
             </ul>
          </nav>
          <!-- Navbar stop -->

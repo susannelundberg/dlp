@@ -49,3 +49,31 @@ a {
     text-decoration: none;
     color: var(--text-color);
 }
+
+/* Form layout */
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2rem;
+    align-items: center;
+    padding: 1.5rem, 1rem;
+    border-radius: 1rem;
+}
+
+form buttom {
+    max-width: 400px;
+}
+
+form input {
+    /* position: absolute; */
+    width: 100%;
+    border: none;
+    padding: 0 0.8rem;
+    line-height: 20px;
+    font-size: 1.1rem;
+    background: transparent;
+    border-bottom: solid 1px var(--primary-border-color);
+    transition: 0.1s ease-out;
+    z-index: 1;
+}

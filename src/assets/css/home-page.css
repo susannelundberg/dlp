@@ -33,7 +33,7 @@ main div {
 }
 
 .nedräkning {
-    font-size: 2rem;
-    color: var(--secondary-color);
+    font-size: 1.5rem;
+    color: var(--green-color);
     padding-bottom: 20px;
 }

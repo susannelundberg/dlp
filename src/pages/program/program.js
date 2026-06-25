@@ -1,34 +1,50 @@
 import { navbar } from "../../utilities/menu.js";
-import DataClient from "../../utilities/data-client.js";
+import { renderSchedule, scheduleClient } from "../../utilities/schedule.js";
 
-const scheduleClient = new DataClient('schema');
+const dagForm = document.querySelector('.dag-form');
+const form = document.querySelector('.schema-form');
 
-const renderSchedule = async () => {
-    const dagar = await scheduleClient.listAll();
-    const container = document.querySelector('.schema-container');
+const handleSubmitDag = async (e) => {
+    e.preventDefault();
+     console.log('dag submit körs');
 
-    dagar.forEach((dag, index) => {
-        const id = `toggle-text${index +1}`;
+    const formData = new FormData(dagForm);
+    const data = {
+        dag: formData.get('dag'),
+        händelser: []
+    };
 
-        const html = `
-        <section class="schema">
-            <h2>${dag.dag}</h2>
-            <input type="checkbox" id="${id}">
-            <label for="${id}">Visa mer</label>
-            <div class="content">
-                ${dag.händelser.map(h =>`
-                <div class="happening">
-                    <p class="time">${h.tid}</p>
-                    <p class="description">${h.beskrivning}</p>
-                </div>
-                    `).join('')}
-            </div>
-            </section>
-            `;
-            
-            container.insertAdjacentHTML('beforeend', html);
-        });
+    const result = await scheduleClient.add(data);
+
+    if (result) {
+        dagForm.reset();
+        renderSchedule();
+    }
+}
+
+const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    const formData = new FormData(form);
+    const dagId = formData.get('dag');
+    const dag = await scheduleClient.findById(dagId);
+
+    dag.händelser.push({
+        tid: formData.get('tid'),
+        beskrivning: formData.get('beskrivning')
+    });
+
+    const result = await scheduleClient.update(dagId, {händelser: dag.händelser});
+
+    if (result) {
+        form.reset();
+        renderSchedule();
+    }
+
 };
+
+dagForm.addEventListener('submit', handleSubmitDag);
+form.addEventListener('submit', handleSubmit);
 
 const initApp = () => {
   document.querySelector('header').insertAdjacentHTML('afterbegin', navbar);
@@ -36,3 +52,4 @@ const initApp = () => {
 };
 
 initApp();
+

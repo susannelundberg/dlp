@@ -34,5 +34,31 @@ export default class DataClient {
             console.log(error);
         }
     }
-}
 
+    async update(id, data) {
+        try {
+            const response = await fetch(`${this.#url}/${id}`, {
+                method: 'PATCH',
+                headers: {'content-type': 'application/json'},
+                body: JSON.stringify(data),
+            });
+            if (response.ok) return true;
+            return false;
+        } catch (error) {
+            console.log(error);
+        }
+    }
+
+    async findById(id){
+        try {
+            const response = await fetch(`${this.#url}/${id}`);
+            if (response.ok) {
+                const result = await response.json();
+                this.#data = result;
+                return this.#data;
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
+}
