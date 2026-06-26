@@ -1,4 +1,4 @@
-import { navbar } from "../../utilities/menu.js";
+import Navbar from '../../utilities/menu.js';
 import { renderSchedule, scheduleClient } from "../../utilities/schedule.js";
 
 const dagForm = document.querySelector('.dag-form');
@@ -47,7 +47,7 @@ dagForm.addEventListener('submit', handleSubmitDag);
 form.addEventListener('submit', handleSubmit);
 
 const initApp = () => {
-  document.querySelector('header').insertAdjacentHTML('afterbegin', navbar);
+  new Navbar();
   renderSchedule();
 };
 

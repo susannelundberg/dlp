@@ -1,5 +1,12 @@
-export const navbar = /*HTML*/ `
-    <!-- Navbar start-->
+export default class Navbar {
+
+    constructor() {
+        const navbar = this.#createNavbar();
+        document.querySelector('header').insertAdjacentHTML('afterbegin', navbar);
+    }
+
+    #createNavbar(){
+    return /*HTML*/ `
          <nav>
             <ul>
                 <li class="logo">
@@ -23,6 +30,7 @@ export const navbar = /*HTML*/ `
                 <li class="menu-item"><a href="/pages/hotel/hotel.html">Hotel</a></li>
                 <li class="menu-item"><a href="/pages/my-page/my-page.html">My page</a></li>
             </ul>
-         </nav>
-         <!-- Navbar stop -->
-`;
+         </nav>`;
+    }
+}
+

@@ -1,7 +1,7 @@
-import { navbar } from "../../utilities/menu.js";
+import Navbar from '../../utilities/menu.js';
 
 const initApp = () => {
-  document.querySelector('header').insertAdjacentHTML('afterbegin', navbar);
+  new Navbar();
 };
 
 initApp();
