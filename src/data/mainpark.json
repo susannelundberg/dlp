@@ -1,0 +1,10 @@
+[
+    {
+        "rubrik" : "Shows & parades",
+        "innehåll" : [
+            {"namn" : "Stars on parade", "tider" : "11.30"},
+            {"namn" : "Million splashes of color", "tider" : "12.45, 15.40, 16.50, 19.10"}
+            
+        ]
+    }
+]

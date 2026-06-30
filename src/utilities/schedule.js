@@ -6,12 +6,15 @@ export const renderSchedule = async () => {
     const container = document.querySelector('.schema-container');
     container.innerHTML = '';
     dagar.forEach((dag, index) => {
-        const id = `toggle-text${index +1}`;
+        
+            console.log(dag.id)
+        const id = `toggle-text${dag.id}`;
         const html = `
         <section class="schema">
             <h2>${dag.dag}</h2>
+            <button data-id="${dag.id}">Remove</button>
             <input type="checkbox" id="${id}">
-            <label for="${id}">Visa mer</label>
+            <label for="${id}">Show more</label>
             <div class="content">
                 ${dag.händelser.map(h =>`
                 <div class="happening">

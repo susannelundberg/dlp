@@ -61,4 +61,17 @@ export default class DataClient {
             console.log(error);
         }
     }
+
+    async remove(id){
+        try {
+            const response = await fetch(`${this.#url}/${id}`, {
+                method: 'DELETE',
+                headers: {'content-type': 'application/json'}
+            });
+            if (response.ok) return true;
+            return false;
+        } catch (error) {
+            console.log(error);
+        }
+    }
 }

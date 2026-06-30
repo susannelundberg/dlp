@@ -1,14 +1,13 @@
 [
     {
-        "rubrik" : "Bra att veta",
+        "rubrik" : "Good to know",
         "innehåll" : [
-            {"punkt" : "Närmaste tvättmaskin finns på hotell Cheyenne."},
-            {"punkt" : "Magic hour avser 08.30-09.30 när parken endast är öppen för Disneylands egna hotellgäster = mindre folk. Viktigt att vara i god tid."},
-            {"punkt" : "Säkerhetskontroll sker varje gång man ska gå in i Disney Village som leder till parkerna. Vi bor nära en som används nästan enbart av gäster på vårt hotell."},
-            {"punkt" : "OBS! Alla tider är hålltider och kan komma att ändras. Dessa är enbart för att du ska få en överblick av hur dagarna kommer se ut."},
-            {"punkt" : "Supermarket finns enbart i Val d’Europe som ligger en tågstation bort. Därför åker vi dit första dagen för att handla på oss snacks och dryck."},
-            {"punkt" : "Läkemedel säljs enbart på apotek varav närmaste finns i Val d’Europe. I nödfall kan man får hjälp inne på Disneyland, men vi packar med oss alvedon osv."},
-            {"punkt" : "Då det finns en risk för tjuvar lämnar vi allt ej nödvändigt på rummet och tar med allt viktigt när vi låser fast vagnen någonstans. OBS! Man får enbast låsa vagens hjul, inte fästa den i något."}
+            {"punkt" : "Washing mashing can be found at hotel Cheyenne."},
+            {"punkt" : "Magic hour is 08.30-09.30 when park is only open to Disneylands own hotel guests (= less people). It is important to been on time tought."},
+            {"punkt" : "Security checks take place every time you enter Disney Village, which leads to the parks."},
+            {"punkt" : "There is only a supermarket in the Val d’Europe shopping centre, which is one train station away. You can also order groceries to your hotel via UberEats."},
+            {"punkt" : "Medicines are only sold in pharmacies, the nearest of which is in Val d’Europe. In case of emergency, you can get help inside Disneyland, but we advise you to pack paracetamol etc."},
+            {"punkt" : "As there is a risk of pickpockets, leave everything not necessary in the room. Also, bring everything important if you leave a stroller somewhere. NOTE! If you lock the stroller, you may only lock the wheels of the stroller, not attach it to anything."}
         ]
     }
 ]

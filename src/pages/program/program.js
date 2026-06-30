@@ -3,6 +3,7 @@ import { renderSchedule, scheduleClient } from "../../utilities/schedule.js";
 
 const dagForm = document.querySelector('.dag-form');
 const form = document.querySelector('.schema-form');
+const container = document.querySelector('.schema-container');
 
 const handleSubmitDag = async (e) => {
     e.preventDefault();
@@ -19,6 +20,7 @@ const handleSubmitDag = async (e) => {
     if (result) {
         dagForm.reset();
         renderSchedule();
+        dagVal();
     }
 }
 
@@ -30,6 +32,7 @@ const handleSubmit = async (e) => {
     const dag = await scheduleClient.findById(dagId);
 
     dag.händelser.push({
+        id: Date.now(),
         tid: formData.get('tid'),
         beskrivning: formData.get('beskrivning')
     });
@@ -45,10 +48,28 @@ const handleSubmit = async (e) => {
 
 dagForm.addEventListener('submit', handleSubmitDag);
 form.addEventListener('submit', handleSubmit);
+container.addEventListener('click', async (e) => {
+    if (e.target.tagName === 'BUTTON') {
+        await scheduleClient.remove(e.target.dataset.id);
+        renderSchedule();
+        dagVal();
+    }
+});
 
-const initApp = () => {
+const dagVal = async () => {
+    const select = document.querySelector('#dag-val')
+    select.innerHTML = ''; 
+
+    const dagar = await scheduleClient.listAll();
+    dagar.forEach(dag => {
+        select.insertAdjacentHTML('beforeend', `<option value="${dag.id}">${dag.dag}</option>`);
+        });
+};
+
+const initApp = async () => {
   new Navbar();
   renderSchedule();
+  dagVal();
 };
 
 initApp();

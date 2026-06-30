@@ -1,7 +1,33 @@
 @import '../../assets/css/site.css';
 
+.info-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding-left: 2rem;
+}
+
+.info-container {
+    flex: 1;
+}
+
 label {
     padding-left: 2rem;
     cursor: pointer;
     font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.rubrik {
+    padding-bottom: 1rem;
+}
+
+.punkt {
+    padding-bottom: 10px;
+}
+
+.punkt .material-symbols-outlined {
+    color: gold;
+    font-size: 30px;
+    vertical-align: middle;
 }
